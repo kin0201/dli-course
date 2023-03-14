@@ -1,0 +1,11 @@
+[Unit]
+Description=My DLI Couser  Service
+After=docker.service
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /home/jetbot/Ken/start-dli-lesson.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
